@@ -1,0 +1,37 @@
+version: "2.0"
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I help you?"
+
+  utter_goodbye:
+    - text: "Goodbye! Take care."
+
+  utter_ask_symptoms:
+    - text: "Can you please tell me your symptoms?"
+
+  utter_unknown_symptoms:
+    - text: "I'm sorry, I couldn't identify your symptoms. Please consult a healthcare professional."
+
+  utter_disease:
+    - text: "Based on your symptoms, you might have {disease}. Please consult a doctor for confirmation."
+
+  utter_cheer_up:
+    - text: "Can you please tell me your symptoms?"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_iamabot:
+    - text: "I am an AI conversational bot, made by Shreya."
+
+  utter_user_concern:
+    - text: "I'm here to help. It sounds like you're not feeling well and are experiencing some symptoms. Can you please tell me more about your symptoms so I can better assist you?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
