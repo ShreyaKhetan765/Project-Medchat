@@ -1,0 +1,115 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: user_concern
+  examples: |
+    - I'm feeling really sad today, and I have a headache.
+    - Not a good day; I also have a sore throat.
+    - Feeling down and experiencing some symptoms.
+    - Super sad and my stomach hurts too.
+    - I've been having a headache and feeling tired.
+    - My throat is sore, and I'm not feeling well.
+    - Can you help me with the symptoms I'm experiencing?
+    - I'm not sure, but I think I have a fever and some other symptoms.
+    - I've been feeling unwell with various symptoms.
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: cheer_up
+  examples: |
+    - I'm feeling down
+    - I need cheering up
+    - Can you make me happy?
+    - Give me something to cheer me up
+
+- intent: did_that_help
+  examples: |
+    - Did that help?
+    - Was that helpful?
+    - Did you solve my problem?
+
+- intent: happy
+  examples: |
+    - I'm happy
+    - That made me happy
+    - I'm in a good mood
+
+- intent: iamabot
+  examples: |
+    - What are you?
+    - Are you a robot?
+    - Explain yourself
+    - Who created you?
+    - who made you?
