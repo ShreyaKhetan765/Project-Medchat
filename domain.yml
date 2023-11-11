@@ -1,37 +1,44 @@
-version: "2.0"
+intents:
+  - greet
+  - goodbye
+  - ask_symptoms
+  - provide_symptoms
+  - ask_recommendations
+  - provide_recommendations
+  - ask_stage
+  - provide_stage
+  - determine_eruptive_stage
+
+entities:
+  - symptom
+
+actions:
+  - action_determine_measles_stage
 
 responses:
   utter_greet:
-    - text: "Hello! How can I help you?"
+    - text: "Hello! How can I help you today?"
 
   utter_goodbye:
     - text: "Goodbye! Take care."
 
   utter_ask_symptoms:
-    - text: "Can you please tell me your symptoms?"
+    - text: "Sure, please tell me the symptoms you're experiencing."
 
-  utter_unknown_symptoms:
-    - text: "I'm sorry, I couldn't identify your symptoms. Please consult a healthcare professional."
+  utter_provide_symptoms:
+    - text: "Common symptoms of measles include fever, cough, runny nose, red eyes, and a rash."
 
-  utter_disease:
-    - text: "Based on your symptoms, you might have {disease}. Please consult a doctor for confirmation."
+  utter_ask_recommendations:
+    - text: "Here are some recommendations for managing measles:"
 
-  utter_cheer_up:
-    - text: "Can you please tell me your symptoms?"
+  utter_provide_recommendations:
+    - text: "Stay hydrated and get plenty of rest. Take acetaminophen to reduce fever and relieve discomfort. Avoid bright lights, as they may worsen sensitivity to light. Consult a healthcare professional for appropriate medical advice."
 
-  utter_did_that_help:
-    - text: "Did that help you?"
+  utter_ask_stage:
+    - text: "Measles has three stages: Prodromal, Eruptive, and Convalescent. Which stage are you curious about?"
 
-  utter_happy:
-    - text: "Great, carry on!"
+  utter_provide_stage:
+    - text: "The stages of measles are Prodromal, Eruptive, and Convalescent."
 
-  utter_iamabot:
-    - text: "I am an AI conversational bot, made by Shreya."
-
-  utter_user_concern:
-    - text: "I'm here to help. It sounds like you're not feeling well and are experiencing some symptoms. Can you please tell me more about your symptoms so I can better assist you?"
-
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  utter_determine_eruptive_stage:
+    - text: "It seems based on your symptoms that you may be in the Eruptive stage of measles. During this stage, the characteristic measles rash appears, starting from the face and spreading to the extremities. It's important to consult with a healthcare professional for a proper diagnosis and guidance."
