@@ -6,110 +6,58 @@ nlu:
     - hey
     - hello
     - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
     - see you later
 
-- intent: affirm
+- intent: ask_symptoms
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - What are the symptoms?
+    - Can you tell me the symptoms of measles?
+    - List the symptoms of measles
+    - What does measles look like?
 
-- intent: deny
+- intent: provide_symptoms
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - fever
+    - cough
+    - runny nose
+    - red eyes
+    - rash
+    - I have High fever, Cough, Conjunctivitis, Sore throat, Photophobia, Enlarged lymph nodes, Body aches, Red eyes, Sensitivity to light, Rash spreading to extremities, Itchy skin.
 
-- intent: mood_great
+- intent: ask_recommendations
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - What are the recommendations for measles?
+    - How can I treat measles?
+    - Give me advice for managing measles.
 
-- intent: user_concern
+- intent: provide_recommendations
   examples: |
-    - I'm feeling really sad today, and I have a headache.
-    - Not a good day; I also have a sore throat.
-    - Feeling down and experiencing some symptoms.
-    - Super sad and my stomach hurts too.
-    - I've been having a headache and feeling tired.
-    - My throat is sore, and I'm not feeling well.
-    - Can you help me with the symptoms I'm experiencing?
-    - I'm not sure, but I think I have a fever and some other symptoms.
-    - I've been feeling unwell with various symptoms.
+    - Stay hydrated and get plenty of rest.
+    - Take acetaminophen to reduce fever and relieve discomfort.
+    - Avoid bright lights, as they may worsen sensitivity to light.
+    - Consult a healthcare professional for appropriate medical advice.
 
-
-- intent: bot_challenge
+- intent: ask_stage
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - What are the stages of measles?
+    - Tell me about the different stages of measles.
+    - What is the progression of measles?
+    - How does measles progress?
 
-
-- intent: cheer_up
+- intent: provide_stage
   examples: |
-    - I'm feeling down
-    - I need cheering up
-    - Can you make me happy?
-    - Give me something to cheer me up
+    - The stages of measles are Prodromal, Eruptive, and Convalescent.
+    - What are the characteristics of the Prodromal stage?
+    - Describe the Eruptive stage of measles.
+    - Tell me about the Convalescent stage of measles.
 
-- intent: did_that_help
+- intent: determine_eruptive_stage
   examples: |
-    - Did that help?
-    - Was that helpful?
-    - Did you solve my problem?
-
-- intent: happy
-  examples: |
-    - I'm happy
-    - That made me happy
-    - I'm in a good mood
-
-- intent: iamabot
-  examples: |
-    - What are you?
-    - Are you a robot?
-    - Explain yourself
-    - Who created you?
-    - who made you?
+    - Do my symptoms indicate the Eruptive stage?
+    - What stage of measles am I in with symptoms like High fever, Cough, Conjunctivitis, Sore throat, Photophobia, Enlarged lymph nodes, Body aches, Red eyes, Sensitivity to light, Rash spreading to extremities, Itchy skin?
+    - Tell me the measles stage based on my symptoms.
